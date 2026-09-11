@@ -1,13 +1,13 @@
 import sys
 
 class Node():
-    def _init_(self, state, parent, action):
+    def __init__(self, state, parent, action):
         self.state = state
         self.parent = parent
         self.action = action
 
 class StackFrontier
-    def _init_(self):
+    def __init__(self):
         self.frontier = []
 
     def add(self, node):
@@ -39,7 +39,7 @@ class QueueFrontier(StackFrontier):
 
 class Maze():
 
-    def _init_(self, filename):
+    def __init__(self, filename):
 
         #read file and set height and width of maze
         with open(filename) as f:
